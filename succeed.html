@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/all.min.css" />
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Succeed</title>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div class="container main p-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="/images//3.png" alt="Chain" width="100%" height="350px" />
+        </div>
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <p class="heading heading2">Successfuly Logged In</p>
+          <p id="stored-email"></p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const storedEmail = document.getElementById("stored-email");
+      storedEmail.innerHTML = localStorage.getItem("email");
+    </script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

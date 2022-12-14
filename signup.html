@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/all.min.css" />
+    <link rel="stylesheet" href="styles/bootstrap.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div class="main container p-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="/images/2.png" alt="Chain" width="100%" height="100%" />
+        </div>
+        <div class="col-lg-6">
+          <p class="heading heading2">Create Account</p>
+          <p style="font-size: 30px; line-height: 38.4px">
+            Go ahead and sign up, let everyone know how awesome you are!
+          </p>
+          <form onsubmit="return validation()" action="/succeed.html">
+            <div class="input-container px-3">
+              <div class="input-icon-container">
+                <img src="images/user.png" alt="user-icon" class="pe-2" />
+              </div>
+              <input id="username" type="text" placeholder="Username" />
+            </div>
+            <p
+              id="username-error"
+              class="alert-danger p-2"
+              style="line-height: 1.2"
+            >
+              * Username must be from 5 - 15 alphanumeric characters only and
+              does NOT start or end with a number.
+            </p>
+            <div class="input-container px-3">
+              <div class="input-icon-container">
+                <img src="images/email.png" alt="user-icon" class="pe-2" />
+              </div>
+              <input id="email" type="text" placeholder="Email" />
+            </div>
+            <p id="email-error" class="alert-danger px-2">
+              * Please enter a valid email.
+            </p>
+            <div class="input-container px-3">
+              <div class="input-icon-container">
+                <img src="images/lock.png" alt="user-icon" class="pe-2" />
+              </div>
+              <input id="password" type="password" placeholder="Password" />
+            </div>
+            <p
+              id="password-error"
+              class="alert-danger p-2"
+              style="line-height: 1.2"
+            >
+              * Password must be at least 8 characters including at least one
+              uppercase, one lowercase letter and one special character.
+            </p>
+            <div class="input-container px-3">
+              <div class="input-icon-container">
+                <img src="images/lock.png" alt="user-icon" class="pe-2" />
+              </div>
+              <input
+                id="re-password"
+                type="password"
+                placeholder="Confirm password"
+              />
+            </div>
+            <p id="re-password-error" class="alert-danger px-2">
+              * Passwords don't match.
+            </p>
+
+            <button class="mt-2" type="submit">Create Account</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/form-validation.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>
