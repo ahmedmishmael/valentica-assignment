@@ -80,6 +80,7 @@ input {
   .main {
     position: absolute;
     top: 0;
+    min-height: 100vh;
   }
   .main-img {
     margin-bottom: 30px;
