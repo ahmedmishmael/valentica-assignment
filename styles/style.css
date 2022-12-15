@@ -16,8 +16,6 @@ body {
 .main {
   background: rgba(245, 247, 255, 0.85);
   border-radius: 10px;
-  position: relative;
-  z-index: 2;
 }
 button {
   background: rgb(38, 99, 223);
@@ -77,9 +75,19 @@ input {
 @media screen and (max-width: 1023px) {
   body {
     text-align: center;
+    font-size: 16px;
   }
   .main {
     position: absolute;
     top: 0;
+  }
+  .main-img {
+    margin-bottom: 30px;
+  }
+  .heading {
+    font-size: 42px;
+  }
+  .heading2 {
+    font-size: 32px;
   }
 }
